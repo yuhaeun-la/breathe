@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathe - 개인정보처리방침</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #E8F5E9, #F3E5F5, #FCE4EC);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .app-name {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        .updated {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+
+        p, li {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #999;
+        }
+
+        a {
+            color: #64B5F6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .lang-switch button {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 6px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            color: #555;
+        }
+
+        .lang-switch button:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .lang { display: none; }
+        .lang.active { display: block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <button onclick="switchLang()">English / 한국어</button>
+        </div>
+
+        <!-- Korean -->
+        <div id="ko" class="lang active">
+            <h1>개인정보처리방침</h1>
+            <p class="app-name">Breathe (호흡 앱)</p>
+            <p class="updated">시행일: 2026년 2월 17일</p>
+
+            <div class="highlight">
+                <p><strong>Breathe는 사용자의 개인정보를 수집하지 않습니다.</strong></p>
+            </div>
+
+            <h2>1. 수집하는 개인정보</h2>
+            <p>Breathe 앱은 어떠한 개인정보도 수집, 저장, 전송하지 않습니다. 서버와의 통신이 전혀 이루어지지 않으며, 모든 데이터는 사용자의 기기에서만 처리됩니다.</p>
+
+            <h2>2. 기기 내 저장 데이터</h2>
+            <p>앱의 원활한 사용을 위해 다음 정보가 사용자의 기기에만 로컬로 저장됩니다:</p>
+            <ul>
+                <li>호흡 설정값 (들이쉬기, 멈춤, 내쉬기 시간)</li>
+            </ul>
+            <p>이 데이터는 기기 외부로 전송되지 않으며, 앱을 삭제하면 함께 삭제됩니다.</p>
+
+            <h2>3. 제3자 제공</h2>
+            <p>Breathe는 어떠한 제3자에게도 데이터를 제공하거나 공유하지 않습니다. 광고 SDK, 분석 도구, 추적 도구를 사용하지 않습니다.</p>
+
+            <h2>4. 네트워크 통신</h2>
+            <p>Breathe 앱은 인터넷 연결을 사용하지 않습니다. 모든 기능은 오프라인으로 작동합니다.</p>
+
+            <h2>5. 아동의 개인정보</h2>
+            <p>본 앱은 개인정보를 수집하지 않으므로, 아동의 개인정보 또한 수집되지 않습니다. 모든 연령대의 사용자가 안전하게 사용할 수 있습니다.</p>
+
+            <h2>6. 개인정보처리방침의 변경</h2>
+            <p>본 개인정보처리방침은 변경될 수 있으며, 변경 시 본 페이지를 통해 공지합니다.</p>
+
+            <h2>7. 문의</h2>
+            <p>개인정보처리방침에 대한 문의사항이 있으시면 아래로 연락해 주세요.</p>
+            <p>이메일: <a href="mailto:exok1and1m@gmail.com">exok1and1m@gmail.com</a></p>
+
+            <div class="footer">
+                <p>&copy; 2026 Breathe. All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div id="en" class="lang">
+            <h1>Privacy Policy</h1>
+            <p class="app-name">Breathe</p>
+            <p class="updated">Effective Date: February 17, 2026</p>
+
+            <div class="highlight">
+                <p><strong>Breathe does not collect any personal information.</strong></p>
+            </div>
+
+            <h2>1. Information We Collect</h2>
+            <p>Breathe does not collect, store, or transmit any personal information. The app does not communicate with any server, and all data is processed solely on your device.</p>
+
+            <h2>2. Data Stored on Your Device</h2>
+            <p>The following data is stored locally on your device for app functionality:</p>
+            <ul>
+                <li>Breathing settings (inhale, hold, and exhale durations)</li>
+            </ul>
+            <p>This data is never transmitted outside your device and is deleted when you uninstall the app.</p>
+
+            <h2>3. Third-Party Sharing</h2>
+            <p>Breathe does not share any data with third parties. We do not use advertising SDKs, analytics tools, or tracking tools.</p>
+
+            <h2>4. Network Communication</h2>
+            <p>Breathe does not use an internet connection. All features work completely offline.</p>
+
+            <h2>5. Children's Privacy</h2>
+            <p>Since this app does not collect any personal information, no data from children is collected either. The app is safe for users of all ages.</p>
+
+            <h2>6. Changes to This Policy</h2>
+            <p>This privacy policy may be updated from time to time. Any changes will be posted on this page.</p>
+
+            <h2>7. Contact Us</h2>
+            <p>If you have any questions about this privacy policy, please contact us at:</p>
+            <p>Email: <a href="mailto:exok1and1m@gmail.com">exok1and1m@gmail.com</a></p>
+
+            <div class="footer">
+                <p>&copy; 2026 Breathe. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLang() {
+            const ko = document.getElementById('ko');
+            const en = document.getElementById('en');
+            ko.classList.toggle('active');
+            en.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

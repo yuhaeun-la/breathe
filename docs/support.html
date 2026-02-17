@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathe - 지원</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #E8F5E9, #F3E5F5, #FCE4EC);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .app-name {
+            font-size: 16px;
+            color: #888;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-top: 36px;
+            margin-bottom: 12px;
+        }
+
+        p, li {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .highlight {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            padding: 20px 24px;
+            margin: 24px 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+        }
+
+        .feature-card strong {
+            color: #2c3e50;
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            color: #999;
+        }
+
+        .footer a {
+            color: #64B5F6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        a {
+            color: #64B5F6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .lang-switch button {
+            background: rgba(255, 255, 255, 0.7);
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 6px 16px;
+            font-size: 14px;
+            cursor: pointer;
+            color: #555;
+        }
+
+        .lang-switch button:hover {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .lang { display: none; }
+        .lang.active { display: block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <button onclick="switchLang()">English / 한국어</button>
+        </div>
+
+        <!-- Korean -->
+        <div id="ko" class="lang active">
+            <h1>고객 지원</h1>
+            <p class="app-name">Breathe (호흡 앱)</p>
+
+            <div class="highlight">
+                <p>Breathe는 4-7-8 호흡법을 기반으로 한 간단하고 직관적인 호흡 운동 앱입니다. 깊은 호흡을 통해 마음을 안정시키고 스트레스를 해소하세요.</p>
+            </div>
+
+            <h2>주요 기능</h2>
+            <div class="feature-card">
+                <strong>호흡 가이드</strong>
+                <p>들이쉬기, 멈춤, 내쉬기 단계를 시각적 애니메이션과 함께 안내합니다.</p>
+            </div>
+            <div class="feature-card">
+                <strong>맞춤 설정</strong>
+                <p>각 호흡 단계의 시간을 1~15초 사이에서 자유롭게 조절할 수 있습니다.</p>
+            </div>
+            <div class="feature-card">
+                <strong>오프라인 사용</strong>
+                <p>인터넷 연결 없이 언제 어디서나 사용할 수 있습니다.</p>
+            </div>
+
+            <h2>자주 묻는 질문</h2>
+            <div class="feature-card">
+                <strong>4-7-8 호흡법이란?</strong>
+                <p>4초 들이쉬기, 7초 멈추기, 8초 내쉬기를 반복하는 호흡법입니다. 긴장 완화와 수면 개선에 효과적입니다.</p>
+            </div>
+            <div class="feature-card">
+                <strong>호흡 시간을 변경할 수 있나요?</strong>
+                <p>네, 설정 화면에서 각 단계의 시간을 자유롭게 조절할 수 있습니다.</p>
+            </div>
+            <div class="feature-card">
+                <strong>개인정보가 수집되나요?</strong>
+                <p>아니요, Breathe는 어떠한 개인정보도 수집하지 않습니다. 자세한 내용은 <a href="privacy-policy.html">개인정보처리방침</a>을 참고하세요.</p>
+            </div>
+
+            <h2>문의하기</h2>
+            <p>문제가 발생하거나 건의사항이 있으시면 아래로 연락해 주세요.</p>
+            <p>이메일: <a href="mailto:exok1and1m@gmail.com">exok1and1m@gmail.com</a></p>
+
+            <div class="footer">
+                <p><a href="privacy-policy.html">개인정보처리방침</a></p>
+                <p>&copy; 2026 Breathe. All rights reserved.</p>
+            </div>
+        </div>
+
+        <!-- English -->
+        <div id="en" class="lang">
+            <h1>Support</h1>
+            <p class="app-name">Breathe</p>
+
+            <div class="highlight">
+                <p>Breathe is a simple and intuitive breathing exercise app based on the 4-7-8 breathing technique. Calm your mind and relieve stress through deep breathing.</p>
+            </div>
+
+            <h2>Features</h2>
+            <div class="feature-card">
+                <strong>Breathing Guide</strong>
+                <p>Visual animations guide you through inhale, hold, and exhale phases.</p>
+            </div>
+            <div class="feature-card">
+                <strong>Customizable Settings</strong>
+                <p>Adjust each breathing phase duration freely between 1 and 15 seconds.</p>
+            </div>
+            <div class="feature-card">
+                <strong>Offline Use</strong>
+                <p>Use it anytime, anywhere without an internet connection.</p>
+            </div>
+
+            <h2>FAQ</h2>
+            <div class="feature-card">
+                <strong>What is the 4-7-8 breathing technique?</strong>
+                <p>It involves inhaling for 4 seconds, holding for 7 seconds, and exhaling for 8 seconds. It is effective for relaxation and improving sleep.</p>
+            </div>
+            <div class="feature-card">
+                <strong>Can I change the breathing durations?</strong>
+                <p>Yes, you can adjust each phase duration in the settings screen.</p>
+            </div>
+            <div class="feature-card">
+                <strong>Is any personal data collected?</strong>
+                <p>No, Breathe does not collect any personal data. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+            </div>
+
+            <h2>Contact Us</h2>
+            <p>If you encounter any issues or have suggestions, please reach out to us.</p>
+            <p>Email: <a href="mailto:exok1and1m@gmail.com">exok1and1m@gmail.com</a></p>
+
+            <div class="footer">
+                <p><a href="privacy-policy.html">Privacy Policy</a></p>
+                <p>&copy; 2026 Breathe. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function switchLang() {
+            const ko = document.getElementById('ko');
+            const en = document.getElementById('en');
+            ko.classList.toggle('active');
+            en.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
